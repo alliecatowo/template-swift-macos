@@ -1,6 +1,6 @@
 # template-swift-macos
 
-macOS Swift app template: SwiftPM, SwiftUI, XCTest, mise, lefthook, macOS CI and a Zola docs site.
+macOS Swift app template with CI and docs.
 
 ## Install
 

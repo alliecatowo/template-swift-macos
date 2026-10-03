@@ -4,7 +4,7 @@ Guidance for AI agents (and humans) working in the **template-swift-macos** repo
 
 ## What template-swift-macos is
 
-macOS Swift app template: SwiftPM, SwiftUI, XCTest, mise, lefthook, macOS CI and a Zola docs site. A SwiftPM-first macOS app (SwiftUI): logic in the `AppCore` library, UI in the `MacApp` executable.
+macOS Swift app template with CI and docs. A SwiftPM-first macOS app (SwiftUI): logic in the `AppCore` library, UI in the `MacApp` executable.
 
 ## Commands
 
