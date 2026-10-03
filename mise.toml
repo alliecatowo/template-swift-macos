@@ -1,0 +1,28 @@
+min_version = "2026.9.0"
+
+# Swift comes from Xcode (xcode-select), not mise: see CLAUDE.md for the required version.
+[tools]
+lefthook = "2.1.16"
+
+[env]
+_.file = ".env"
+
+[hooks]
+# Installs the git hooks the first time `mise install` runs in a clone.
+postinstall = "lefthook install"
+
+[tasks.check]
+description = "swift-format lint (bundled with the Swift 6 toolchain)"
+run = "swift format lint --recursive Sources Tests Package.swift"
+
+[tasks.fmt]
+description = "Format in place"
+run = "swift format --in-place --recursive Sources Tests Package.swift"
+
+[tasks.test]
+description = "Run the test suite"
+run = "swift test"
+
+[tasks.build]
+description = "Release build"
+run = "swift build -c release"
